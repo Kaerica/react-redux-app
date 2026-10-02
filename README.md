@@ -27,6 +27,8 @@ npm run dev
 
 Open `http://localhost:5173/`. Open the browser console to see every dispatched action logged by `redux-logger`.
 
+> **Note:** `store.ts` uses `import { createLogger } from "redux-logger"` and `createLogger()` instead of the default `import logger from "redux-logger"` shown in Step 1 below. With Vite, the default import does not resolve to the middleware function and the app crashes with `TypeError: middleware is not a function` (blank page).
+
 ## **Project structure**
 
 ```
